@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
-    <NETStandardImplicitPackageVersion>2.0.0</NETStandardImplicitPackageVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!--<RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
+    <NETStandardImplicitPackageVersion>2.0.0</NETStandardImplicitPackageVersion>-->
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <Description>Provides Ocelot extensions to use the administration API and IdentityService dependencies that come with it</Description>
     <AssemblyTitle>Ocelot.Administration</AssemblyTitle>
@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://github.com/ThreeMammals/Ocelot.Administration</PackageProjectUrl>
     <PackageProjectUrl>https://github.com/ThreeMammals/Ocelot.Administration</PackageProjectUrl>
     <PackageIconUrl>http://threemammals.com/images/ocelot_logo.png</PackageIconUrl>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;osx.10.12-x64;win7-x64</RuntimeIdentifiers>
+    <!--<RuntimeIdentifiers>win10-x64;osx.10.11-x64;osx.10.12-x64;win7-x64</RuntimeIdentifiers>-->
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -32,7 +32,8 @@
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
-    <PackageReference Include="IdentityServer4" Version="2.2.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+    <PackageReference Include="IdentityServer4" Version="3.0.0-preview3.4" />
+		<PackageReference Include="Microsoft.AspNetCore.App" Version="3.0.0-preview3.19153.11" />
   </ItemGroup>
 </Project>

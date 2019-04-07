@@ -136,8 +136,8 @@ namespace Ocelot.DependencyInjection
             this.MvcCoreBuilder = Services.AddMvcCore()
                   .AddApplicationPart(assembly)
                   .AddControllersAsServices()
-                  .AddAuthorization()
-                  .AddJsonFormatters();
+                  .AddAuthorization();
+                  //.AddJsonFormatters();
 
             Services.AddLogging();
             Services.AddMiddlewareAnalysis();
